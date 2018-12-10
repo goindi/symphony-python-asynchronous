@@ -11,4 +11,8 @@ Current symphony python api does not have this feature so hopefully this can hel
 
 My first github commit so feedback is encouraged.
 
+A few things to keep in mind
+1) The communication between this process and backend (message generation code) is via files. This is for legacy reason. You can use sockets or whatever else you want
+2) I use redis (in memory database) to keep track of things. There are 2 processes so redis serves as a shared memory store too. You can change it as you see fit.
+
 
