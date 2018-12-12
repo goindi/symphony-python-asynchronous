@@ -32,7 +32,7 @@ logout_url="https://acme-api.symphony.com/sessionauth/v1/logout"
 accept_conn_url="https://acme.symphony.com/pod/v1/connection/accept"
 im_create_url="https://acme.symphony.com/pod/v1/im/create"
 health_check_url="https://acme.symphony.com/agent/v2/HealthCheck"
-find_users_url="https://acme.symphony.com/pod/v1/user"
+find_users_url="https://acme.symphony.com/pod/v3/users"
 
 get_connections_url="https://acme.symphony.com/pod/v1/connection/list?status=all"
 stream_list_url="https://acme.symphony.com/pod/v1/streams/list?limit=5000"
