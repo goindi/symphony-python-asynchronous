@@ -31,6 +31,10 @@ logger.setLevel(logging.DEBUG)
 r = redis.StrictRedis(host=cfg.redis_host, port=cfg.redis_port, db=cfg.redis_db)
 
 symph_instance=SymphonyClass.SymphonyBot(cfg,logger,r)
+symph_instance.get_stream_list()
+symph_instance.register_presence_interest()
+symph_instance.get_user_buddy_request_status()
+symph_instance.write_presence_file()
 old_time=time.time()
 while True:
     symph_instance.read_stream()
